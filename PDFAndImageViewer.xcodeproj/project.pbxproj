@@ -13,6 +13,11 @@
 		370DAF7124B504B700D4789B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370DAF7024B504B700D4789B /* Assets.xcassets */; };
 		370DAF7424B504B700D4789B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370DAF7324B504B700D4789B /* Preview Assets.xcassets */; };
 		370DAF7724B504B700D4789B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370DAF7524B504B700D4789B /* LaunchScreen.storyboard */; };
+		3795A16F24B50EB500AF265A /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795A16E24B50EB500AF265A /* PhotoViewer.swift */; };
+		3795A17124B51A4900AF265A /* PinchToZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795A17024B51A4900AF265A /* PinchToZoom.swift */; };
+		3795A17324B6147D00AF265A /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795A17224B6147D00AF265A /* PageView.swift */; };
+		3795A17524B6151D00AF265A /* SwiperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795A17424B6151D00AF265A /* SwiperView.swift */; };
+		3795A17724B61DA100AF265A /* PageIndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795A17624B61DA100AF265A /* PageIndicatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		370DAF7324B504B700D4789B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		370DAF7624B504B700D4789B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370DAF7824B504B700D4789B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3795A16E24B50EB500AF265A /* PhotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
+		3795A17024B51A4900AF265A /* PinchToZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchToZoom.swift; sourceTree = "<group>"; };
+		3795A17224B6147D00AF265A /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		3795A17424B6151D00AF265A /* SwiperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiperView.swift; sourceTree = "<group>"; };
+		3795A17624B61DA100AF265A /* PageIndicatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,14 @@
 		370DAF6924B504B400D4789B /* PDFAndImageViewer */ = {
 			isa = PBXGroup;
 			children = (
-				370DAF6A24B504B400D4789B /* AppDelegate.swift */,
-				370DAF6C24B504B400D4789B /* SceneDelegate.swift */,
 				370DAF6E24B504B400D4789B /* ContentView.swift */,
+				3795A16E24B50EB500AF265A /* PhotoViewer.swift */,
+				3795A17024B51A4900AF265A /* PinchToZoom.swift */,
+				3795A17224B6147D00AF265A /* PageView.swift */,
+				3795A17424B6151D00AF265A /* SwiperView.swift */,
+				3795A17624B61DA100AF265A /* PageIndicatorButton.swift */,
 				370DAF7024B504B700D4789B /* Assets.xcassets */,
-				370DAF7524B504B700D4789B /* LaunchScreen.storyboard */,
-				370DAF7824B504B700D4789B /* Info.plist */,
+				370DAF7E24B5063500D4789B /* System */,
 				370DAF7224B504B700D4789B /* Preview Content */,
 			);
 			path = PDFAndImageViewer;
@@ -73,6 +85,17 @@
 				370DAF7324B504B700D4789B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		370DAF7E24B5063500D4789B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				370DAF7824B504B700D4789B /* Info.plist */,
+				370DAF7524B504B700D4789B /* LaunchScreen.storyboard */,
+				370DAF6A24B504B400D4789B /* AppDelegate.swift */,
+				370DAF6C24B504B400D4789B /* SceneDelegate.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3795A16F24B50EB500AF265A /* PhotoViewer.swift in Sources */,
+				3795A17324B6147D00AF265A /* PageView.swift in Sources */,
+				3795A17724B61DA100AF265A /* PageIndicatorButton.swift in Sources */,
+				3795A17124B51A4900AF265A /* PinchToZoom.swift in Sources */,
 				370DAF6B24B504B400D4789B /* AppDelegate.swift in Sources */,
+				3795A17524B6151D00AF265A /* SwiperView.swift in Sources */,
 				370DAF6D24B504B400D4789B /* SceneDelegate.swift in Sources */,
 				370DAF6F24B504B400D4789B /* ContentView.swift in Sources */,
 			);
@@ -288,7 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PDFAndImageViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PDFAndImageViewer/Info.plist;
+				INFOPLIST_FILE = PDFAndImageViewer/System/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PDFAndImageViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = D6VB3396MT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PDFAndImageViewer/Info.plist;
+				INFOPLIST_FILE = PDFAndImageViewer/System/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
